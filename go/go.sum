@@ -1,0 +1,4 @@
+github.com/extism/go-pdk v1.0.2 h1:UB7oTW3tw2zoMlsUdBEDAAbhQg9OudzgNeyCwQYZ730=
+github.com/extism/go-pdk v1.0.2/go.mod h1:Gz+LIU/YCKnKXhgge8yo5Yu1F/lbv7KtKFkiCSzW/P4=
+github.com/extism/go-pdk/wasi-reactor v0.0.0-20240408161339-095ac11ddc4e h1:4l5icoU4LgswJ213Q2rlo5Ue2LmEObKBrv6P8/dGhTE=
+github.com/extism/go-pdk/wasi-reactor v0.0.0-20240408161339-095ac11ddc4e/go.mod h1:WDu1fWWoFToXBPq+vRAnfFROFFdPayxGbiXf8ysq+no=

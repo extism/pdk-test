@@ -3,3 +3,4 @@ target
 Cargo.lock
 .zig-cache
 zig-out
+dist-newstyle

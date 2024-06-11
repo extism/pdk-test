@@ -1,3 +1,5 @@
 target
 *.wasm
 Cargo.lock
+.zig-cache
+zig-out

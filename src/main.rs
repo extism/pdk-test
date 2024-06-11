@@ -5,7 +5,18 @@ pub fn main() {
     let mut imports = Default::default();
     for arg in args {
         let data = std::fs::read(&arg).unwrap();
+
         imports = extism_pdk_test::check_imports(&data, Some(imports)).unwrap();
+        let mut plugin = extism::PluginBuilder::new(
+            extism::Manifest::new([extism::Wasm::data(data)]).with_allowed_host("extism.org"),
+        )
+        .with_wasi(true)
+        .build()
+        .unwrap();
+        if plugin.function_exists("kitchen_sink") {
+            let output: &str = plugin.call("kitchen_sink", "test").unwrap();
+            assert_eq!(output, "test");
+        }
     }
     let mut errors = 0;
 
